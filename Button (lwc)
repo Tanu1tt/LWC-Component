@@ -5,6 +5,11 @@
             Click the buttons to activate the <code>onclick</code> handler and view the label of the clicked button.
         </h2>
         
+        <lightning-file-upload
+        label="Attach receipt"
+        multiple
+    >
+    </lightning-file-upload>
         <lightning-button variant="brand" class="slds-button" data-id="Blue_Button" label="Text Blue" onclick={handle_Blue_Text_Click}></lightning-button>
         <lightning-button variant="neutral" class="slds-button" label="Change Color"  onclick={handle_Color_Change}></lightning-button>
         <!-- Base variant: Makes a button look like a link -->
