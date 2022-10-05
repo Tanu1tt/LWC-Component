@@ -1,6 +1,9 @@
 import { LightningElement } from 'lwc';
 export default class ButtonBasic extends LightningElement {
     clickedButtonLabel;
+    handle_Green_Text_Click(event){
+        this.textColorClass = 'green';
+    }
     this.template.querySelector('[data-id="Green_Button"]').click();
     handleClick(event) {
         this.clickedButtonLabel = event.target.label;
