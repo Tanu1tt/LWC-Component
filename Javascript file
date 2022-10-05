@@ -4,6 +4,10 @@ export default class ButtonBasic extends LightningElement {
     handle_Green_Text_Click(event){
         this.textColorClass = 'green';
     }
+    get acceptedFormats() {
+        return ['.pdf', '.png'];
+    }
+
     this.template.querySelector('[data-id="Green_Button"]').click();
     handleClick(event) {
         this.clickedButtonLabel = event.target.label;
